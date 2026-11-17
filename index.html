@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home improvement by Elim | Builders & home improvements in Coventry</title>
+<meta name="description" content="Home improvements in Coventry and within 20 miles: roofing, kitchens, bathrooms, windows, plastering, decorating, landscaping and more. Get a free instant price guide online.">
+<link rel="canonical" href="https://homeimprovementbyelim.github.io/">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Home improvement by Elim",
+  "url": "https://homeimprovementbyelim.github.io/",
+  "telephone": "+447802576433",
+  "email": "homeimprovementbyelim@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Coventry", "postalCode": "CV6", "addressCountry": "GB"},
+  "areaServed": {"@type": "GeoCircle", "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 52.43, "longitude": -1.51}, "geoRadius": "32000"}
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">Home improvement <span>by Elim</span></a>
+    <a class="btn btn-small" href="#quote">Get a price</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Coventry &amp; within 20 miles</p>
+        <h1>Home improvements, priced in minutes</h1>
+        <p class="lead">Tell us about the job and add a few photos. You'll get a price guide by email straight away. Small jobs get a fixed price you can book. Bigger jobs get a free survey and a firm, written quote.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#quote">Get my free price guide</a>
+          <a class="link" href="tel:+447802576433">Or call 07802 576433</a>
+        </div>
+      </div>
+      <ol class="steps" aria-label="How it works">
+        <li><strong>Describe the job</strong><span>Two minutes, with photos if you have them.</span></li>
+        <li><strong>Get a price by email</strong><span>Instantly, day or night.</span></li>
+        <li><strong>Survey &amp; firm quote</strong><span>For bigger jobs we visit, measure and fix the price in writing. Any extras are agreed with you before they're done.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="services-h">
+    <h2 id="services-h">What we do</h2>
+    <div id="trades" class="trades"></div>
+  </section>
+
+  <section id="quote" class="section quote-section" aria-labelledby="quote-h">
+    <div class="wrap narrow">
+      <h2 id="quote-h">Get your free price guide</h2>
+      <p class="muted">No obligation. We only use your details for this enquiry; see our <a href="privacy.html">privacy notice</a>.</p>
+
+      <form id="enquiry" novalidate>
+        <fieldset>
+          <legend>The job</legend>
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required><option value="">Choose a service…</option></select>
+
+          <div id="qty-row" class="row" hidden>
+            <div>
+              <label for="quantity">Roughly how much? <span id="unit-hint" class="muted"></span></label>
+              <input id="quantity" name="quantity" type="number" min="0.5" step="0.5" inputmode="decimal">
+            </div>
+          </div>
+
+          <label for="description">Describe the job</label>
+          <textarea id="description" name="description" rows="5" required placeholder="e.g. Two slipped tiles above the back bedroom, water coming in when it rains. Semi-detached, two storeys."></textarea>
+
+          <label for="photos">Photos (optional, up to 5)</label>
+          <input id="photos" name="photos" type="file" accept="image/*" multiple>
+          <p id="photo-note" class="muted small">Photos help us give a more accurate price.</p>
+
+          <label for="urgency">When would you like it done?</label>
+          <select id="urgency" name="urgency">
+            <option>As soon as possible</option><option>Within a month</option><option>In 1–3 months</option><option>Just planning</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="row two">
+            <div><label for="firstName">First name</label><input id="firstName" name="firstName" autocomplete="given-name" required></div>
+            <div><label for="lastName">Last name</label><input id="lastName" name="lastName" autocomplete="family-name" required></div>
+          </div>
+          <div class="row two">
+            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <label for="address1">Address of the job</label>
+          <input id="address1" name="address1" autocomplete="address-line1" required placeholder="House number and street">
+          <div class="row two">
+            <div><label for="town">Town</label><input id="town" name="town" autocomplete="address-level2" required></div>
+            <div><label for="postcode">Postcode</label><input id="postcode" name="postcode" autocomplete="postal-code" required></div>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+        </fieldset>
+
+        <fieldset class="consent">
+          <legend>Contact preferences</legend>
+          <label class="check"><input type="checkbox" id="consentContact" name="consentContact" required>
+            <span>I agree that Home improvement by Elim can contact me by email, phone or text about <strong>this enquiry and quote</strong>.</span></label>
+          <label class="check"><input type="checkbox" id="consentMarketing" name="consentMarketing">
+            <span>Yes, send me occasional offers and seasonal maintenance reminders by email or text. I can opt out at any time. <span class="muted">(Optional)</span></span></label>
+        </fieldset>
+
+        <p id="form-error" class="error" role="alert" hidden></p>
+        <button class="btn btn-wide" type="submit" id="submit-btn">Send and get my price guide</button>
+      </form>
+
+      <div id="thanks" class="thanks" hidden tabindex="-1">
+        <h3>Thanks, we've got it</h3>
+        <p>Your price guide is on its way to <strong id="thanks-email"></strong>. Check your junk folder if it hasn't arrived in a few minutes.</p>
+        <p class="muted">Your reference: <strong id="thanks-ref"></strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="faq-h">
+    <h2 id="faq-h">Questions</h2>
+    <details><summary>How is the price worked out?</summary><p>From our day rates, the size of the job and typical materials. Small jobs get a fixed price. Bigger jobs get a price range first, then a firm price in writing after we've seen the job. If we find something that couldn't be seen at the survey, we explain it and agree any extra cost with you before doing it.</p></details>
+    <details><summary>Do I have to pay anything up front?</summary><p>The survey is free. When you accept a firm quote we ask for a 25% deposit to book your dates, and the balance on completion.</p></details>
+    <details><summary>Can I change my mind?</summary><p>Yes. You have 14 days after accepting a quote to cancel, and we'll refund your deposit. If you ask us to start sooner, for example for an urgent leak, you'd only pay for work already done.</p></details>
+    <details><summary>Who does gas and electrical work?</summary><p>All gas and electrical work is carried out by contractors who hold the required registrations (e.g. Gas Safe, Part P) and insurance.</p></details>
+    <details><summary>Which areas do you cover?</summary><p>Coventry and within about 20 miles, including Nuneaton, Bedworth, Rugby, Kenilworth, Warwick, Leamington Spa, Solihull, Hinckley, Atherstone and Tamworth.</p></details>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p><strong>HOME IMPROVEMENT by ELIM</strong> · 186 Three Spires Av, Coventry, CV6 1LA</p>
+    <p><a href="tel:+447802576433">07802 576433</a> · <a href="mailto:homeimprovementbyelim@gmail.com">homeimprovementbyelim@gmail.com</a> · <a href="privacy.html">Privacy notice</a></p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="services.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
